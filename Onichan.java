@@ -2,9 +2,10 @@ import java.util.Scanner;
 public class Onichan {
     public static void main(String[] args) {
         Scanner UWU = new Scanner(System.in);
+        int dia;
+        do {
         System.out.println("Ingresa el numero dia de la semana ingrese 8 para salir: ");
-        int dia = UWU.nextInt();
-        do{
+        dia = UWU.nextInt();
         if (dia == 1) {
             System.out.println("Lunes");
         }else if (dia == 2) {
@@ -21,6 +22,8 @@ public class Onichan {
             System.out.println("Domingo");
         }else if (dia == 8){
             System.out.println("Saliendo del Programa");
+        }else{
+            System.out.println("Dia invalido");
         }
         }while (dia != 8);
     }
